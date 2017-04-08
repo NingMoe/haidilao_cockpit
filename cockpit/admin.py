@@ -10,3 +10,7 @@ class BiCommonPagesuAdmin(admin.ModelAdmin):
 class PagesuDocIDAdmin(admin.ModelAdmin):
     pass
 # admin.site.register(PagesuDocID)
+
+# @admin.register(ProductForm)
+# class ProductFormAdmin(admin.ModelAdmin):
+#     pass

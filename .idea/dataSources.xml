@@ -7,5 +7,11 @@
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db.sqlite3</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="min_upfile_database" uuid="1e9f3f5c-ae53-4363-82e8-f19ef8b89bff">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/../minimal-django-file-upload-example/src/for_django_1-7/myproject/myproject/database/database.sqlite3</jdbc-url>
+    </data-source>
   </component>
 </project>

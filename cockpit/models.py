@@ -1,5 +1,7 @@
 # -*- coding: UTF-8 -*-
 from __future__ import unicode_literals
+from django.forms import ModelForm
+from suit.widgets import AutosizedTextarea
 from django.db import models
 
 # Create your models here.
@@ -45,3 +47,10 @@ class PagesuDocID(models.Model):
         #         db_table ='tab_bdata_common_pagesu'
         verbose_name = '文档配置'
         verbose_name_plural = '文档配置'
+
+# class ProductForm(ModelForm):
+#     class Meta:
+#         widgets = {
+#             '描述信息':AutosizedTextarea,
+#             '描述信息':AutosizedTextarea(attrs={'rows': 3, 'class': 'imput-xlarge'}),
+#         }
