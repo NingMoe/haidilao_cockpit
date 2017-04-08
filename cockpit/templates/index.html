@@ -108,36 +108,10 @@ var hrefs =
     
 $(function(){
      ck('概览');
-     
-     
+
+
 })
-{#    function hover(name){#}
-{#        $('#title a').css({#}
-{#        'background':'url("/static/images/导航标题未选中.png")',#}
-{#        'background-size':"100% 100%",#}
-{#        'color':'#fff',#}
-{#            })#}
-{#        $('a[name="'+name+'"]').css({#}
-{#        'background':'url("/static/images/导航标题覆盖.png")',#}
-{#        'background-size':"100% 100%",#}
-{#//         'color':'#AD9D9D',#}
-{#        })#}
-{#        $('a[name="'+selected+'"]').css({#}
-{#        'background':'url("/static/images/导航标题选中.png")',#}
-{#        'background-size':"100% 100%",#}
-{#        'color':'#fff',#}
-{#        })#}
-{#    }#}
-{#    function out(name){#}
-{#        if(name!=selected){#}
-{#            $('a[name="'+name+'"]').css({#}
-{#            'background':'url("/static/images/导航标题未选中.png")',#}
-{#            'background-size':"100% 100%",#}
-{#            'color':'#fff',#}
-{#            })#}
-{#            }#}
-{#        }#}
-    
+
    var selected=''
     function ck(name){
         selected=name;
@@ -155,7 +129,7 @@ $(function(){
                     cache: false,
                     success: function(data,status){
                         $("#Project").val(data['Project']);
-                        $("#currentViewMedia").val(data['currentViewMedia']);
+                        //$("#currentViewMedia").val(data['currentViewMedia']);
                         $("#documentID").val(data['documentID']);
                         $("#evt").val(data['evt']);
                         $("#hiddensections").val(data['hiddensections']);
@@ -166,14 +140,9 @@ $(function(){
                         $("#src").val(data['src']);
                         $("#title").val(data['title']);
                         $("#uid").val(data['uid']);
-                        $("#visMode").val(data['visMode']);
+                        //$("#visMode").val(data['visMode']);
                         $("#queryform").attr("action",data['mstraddr'])
                         $("#queryform").attr("target",title);
-{#                        $("#innerWidth").val($(window).width());#}
-//                         $("#innerWidth").val(1530);//华南演示机器
-{#                        $("#innerHeight").val(window.innerHeight);#}
-//                         $("iframe[name='"+title+"']").attr("width",window.innerWidth+'px'); 
-//                         $("iframe[name='"+title+"']").attr("height",window.innerHeight+'px'); 
                         $("#t").val(new Date().getTime());
                         var src = data['mstraddr']+"?"+$("#queryform input").serialize();
 //                         console.log(src);

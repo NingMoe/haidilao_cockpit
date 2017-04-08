@@ -24,8 +24,8 @@ def getPageSetting(pageid, mstrid='haidilao_rtp'):
             # folderID = jsonurladdr['folderID']
 
             print 'pageid:', pageid
-            settings['visMode'] = jsonurladdr['visMode']
-            settings['currentViewMedia'] = jsonurladdr['currentViewMedia']
+            # settings['visMode'] = jsonurladdr['visMode']
+            # settings['currentViewMedia'] = jsonurladdr['currentViewMedia']
 
             settings['server'] = jsonurladdr['server']
             settings['Project'] = jsonurladdr['Project']
